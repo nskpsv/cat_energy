@@ -1,0 +1,71 @@
+.example {
+    background: #EAEAEA;
+    margin-top: 42px;
+    padding-top: 27px;
+    padding-bottom: 40px;
+}
+
+.header {
+    text-align: left;
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+.text {
+    font-family: Arial;
+    color: #444;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    margin: 33px 21px 0 20px;
+}
+
+.parameters {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 20px;
+}
+
+.item {
+    position: relative;
+    height: 64px;
+    width: 124px;
+    border: 1px solid #CDCDCD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.value {
+    font-size: 24px;
+    text-transform: uppercase;
+    line-height: 24px;
+}
+
+.label {
+    position: absolute;
+    font-family: Arial;
+    font-size: 12px;
+    color: #444;
+    background: #eaeaea;
+    width: 87px;
+    bottom: -20px;
+}
+
+.cost {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 34px;
+    text-transform: uppercase;
+}
+
+.photo {
+    margin-top: 42px;
+    height: 230px;
+}
+
+.image {
+    height: 100%
+}
