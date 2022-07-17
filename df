@@ -1,0 +1,87 @@
+[33mcommit ccd6ed5fb6eba11b5185abde9c5d37720b92f760[m
+Author: Sergey Popov <nskpsv@mail.ru>
+Date:   Wed Jul 13 10:02:01 2022 +0700
+
+    first commit
+
+[1mdiff --git a/package-lock.json b/package-lock.json[m
+[1mindex 18d1de7..2769488 100644[m
+[1m--- a/package-lock.json[m
+[1m+++ b/package-lock.json[m
+[36m@@ -11,6 +11,7 @@[m
+         "@testing-library/jest-dom": "^5.16.4",[m
+         "@testing-library/react": "^13.3.0",[m
+         "@testing-library/user-event": "^13.5.0",[m
+[32m+[m[32m        "axios": "^0.27.2",[m
+         "react": "^18.2.0",[m
+         "react-dom": "^18.2.0",[m
+         "react-scripts": "5.0.1",[m
+[36m@@ -4771,6 +4772,28 @@[m
+         "node": ">=12"[m
+       }[m
+     },[m
+[32m+[m[32m    "node_modules/axios": {[m
+[32m+[m[32m      "version": "0.27.2",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/axios/-/axios-0.27.2.tgz",[m
+[32m+[m[32m      "integrity": "sha512-t+yRIyySRTp/wua5xEr+z1q60QmLq8ABsS5O9Me1AsE5dfKqgnCFzwiCZZ/cGNd1lq4/7akDWMxdhVlucjmnOQ==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "follow-redirects": "^1.14.9",[m
+[32m+[m[32m        "form-data": "^4.0.0"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/axios/node_modules/form-data": {[m
+[32m+[m[32m      "version": "4.0.0",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/form-data/-/form-data-4.0.0.tgz",[m
+[32m+[m[32m      "integrity": "sha512-ETEklSGi5t0QMZuiXoA/Q6vcnxcLQP5vdugSpuAyi6SVGi2clPPp+xgEhuMaHC+zGgn31Kd235W35f7Hykkaww==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "asynckit": "^0.4.0",[m
+[32m+[m[32m        "combined-stream": "^1.0.8",[m
+[32m+[m[32m        "mime-types": "^2.1.12"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">= 6"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+     "node_modules/axobject-query": {[m
+       "version": "2.2.0",[m
+       "resolved": "https://registry.npmjs.org/axobject-query/-/axobject-query-2.2.0.tgz",[m
+[36m@@ -19995,6 +20018,27 @@[m
+       "resolved": "https://registry.npmjs.org/axe-core/-/axe-core-4.4.2.tgz",[m
+       "integrity": "sha512-LVAaGp/wkkgYJcjmHsoKx4juT1aQvJyPcW09MLCjVTh3V2cc6PnyempiLMNH5iMdfIX/zdbjUx2KDjMLCTdPeA=="[m
+     },[m
+[32m+[m[32m    "axios": {[m
+[32m+[m[32m      "version": "0.27.2",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/axios/-/axios-0.27.2.tgz",[m
+[32m+[m[32m      "integrity": "sha512-t+yRIyySRTp/wua5xEr+z1q60QmLq8ABsS5O9Me1AsE5dfKqgnCFzwiCZZ/cGNd1lq4/7akDWMxdhVlucjmnOQ==",[m
+[32m+[m[32m      "requires": {[m
+[32m+[m[32m        "follow-redirects": "^1.14.9",[m
+[32m+[m[32m        "form-data": "^4.0.0"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "form-data": {[m
+[32m+[m[32m          "version": "4.0.0",[m
+[32m+[m[32m          "resolved": "https://registry.npmjs.org/form-data/-/form-data-4.0.0.tgz",[m
+[32m+[m[32m          "integrity": "sha512-ETEklSGi5t0QMZuiXoA/Q6vcnxcLQP5vdugSpuAyi6SVGi2clPPp+xgEhuMaHC+zGgn31Kd235W35f7Hykkaww==",[m
+[32m+[m[32m          "requires": {[m
+[32m+[m[32m            "asynckit": "^0.4.0",[m
+[32m+[m[32m            "combined-stream": "^1.0.8",[m
+[32m+[m[32m            "mime-types": "^2.1.12"[m
+[32m+[m[32m          }[m
+[32m+[m[32m        }[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+     "axobject-query": {[m
+       "version": "2.2.0",[m
+       "resolved": "https://registry.npmjs.org/axobject-query/-/axobject-query-2.2.0.tgz",[m
+[1mdiff --git a/package.json b/package.json[m
+[1mindex bdd6922..a582efb 100644[m
+[1m--- a/package.json[m
+[1m+++ b/package.json[m
+[36m@@ -6,6 +6,7 @@[m
+     "@testing-library/jest-dom": "^5.16.4",[m
+     "@testing-library/react": "^13.3.0",[m
+     "@testing-library/user-event": "^13.5.0",[m
+[32m+[m[32m    "axios": "^0.27.2",[m
+     "react": "^18.2.0",[m
+     "react-dom": "^18.2.0",[m
+     "react-scripts": "5.0.1",[m

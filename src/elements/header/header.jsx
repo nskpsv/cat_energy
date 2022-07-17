@@ -1,5 +1,5 @@
 import React from "react";
-import styles from './header.module.css';
+import styles from './../../styles/css/header.module.css';
 import logo from '../../resources/header/logo_mobile.svg';
 import menuIcon from '../../resources/header/Logo_menu.svg';
 import appNameIcon from '../../resources/header/logo_name.svg';

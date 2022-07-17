@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from './example.module.css';
+import styles from './../../styles/css/example.module.css';
 import fatCat from '../../resources/example/fat_cat.svg';
 import slimCat from '../../resources/example/slim_cat.png';
 import Toggle from '../toggle/toggle';

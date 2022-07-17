@@ -1,5 +1,5 @@
 import React from "react";
-import styles from './how_it_works_item.module.css';
+import styles from './../../styles/css/how_it_works_item.module.css';
 
 export default ({ items }) => {
     return (

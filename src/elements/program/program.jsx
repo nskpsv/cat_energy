@@ -1,5 +1,5 @@
 import React from "react";
-import styles from './program.module.css';
+import styles from './../../styles/css/program.module.css';
 import arrow from '../../resources/program/arrow.svg';
 
 export default ({ programs }) => {

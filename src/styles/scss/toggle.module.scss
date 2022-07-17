@@ -1,0 +1,40 @@
+.selector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 27px;
+}
+
+.toggle {
+    position: relative;
+    height: 14px;
+    width: 84px;
+    background: white;
+    border: 1px solid #CDCDCD;
+    border-radius: 6px;
+    margin: 0 13px;
+}
+
+.label {
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.value {
+    position: absolute;
+    right: 37px;
+    background: #68B738;
+    height: 6px;
+    width: 35px;
+    margin: 4px 6px;
+    border-radius: 6px;
+
+    transition: all;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+}
+
+.true {
+    right: 0;
+}

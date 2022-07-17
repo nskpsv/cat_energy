@@ -1,5 +1,5 @@
 import React from "react";
-import styles from './toggle.module.css';
+import styles from './../../styles/css/toggle.module.css';
 
 
 export default ({onClick, value, lLabel, rLabel }) => {
