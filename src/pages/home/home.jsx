@@ -1,5 +1,5 @@
 import React from "react";
-import styles from './home.module.css';
+import styles from '../../styles/css/home.module.css';
 import Header from '../../elements/header/header';
 import Greet from '../../elements/greet/greet';
 import programs from '../../elements/program/programs_data';

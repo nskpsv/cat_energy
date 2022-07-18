@@ -1,0 +1,44 @@
+.container {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+.container {
+  width: 480px;
+  height: 40px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  cursor: pointer;
+  transition: all;
+  transition-duration: 0.09s;
+  transition-timing-function: linear;
+}
+
+.item:hover {
+  opacity: 0.5;
+}
+
+.item:active {
+  opacity: 0.3;
+}
+
+.active {
+  border-bottom: 1px solid #fff;
+}
+
+.icon {
+  display: none;
+}
+
+/*# sourceMappingURL=menu.module.css.map */

@@ -1,0 +1,66 @@
+%header {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    color: #000000;
+}
+
+%header-60 {
+    @extend %header;
+    font-size: 60px;
+    line-height: 60px;
+}
+
+%header-36 {
+    @extend %header;
+    font-size: 36px;
+    line-height: 36px;
+}
+
+%header-20 {
+    @extend %header;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+%header-24 {
+    @extend %header;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+%header-16 {
+    @extend %header;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+%text-16 {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #444;
+}
+
+%text-14 {
+    @extend %text-16;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+%menu-white {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+%menu-black {
+    @extend %menu-white;
+    color: #000;
+}

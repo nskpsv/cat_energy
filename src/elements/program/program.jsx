@@ -16,10 +16,10 @@ export default ({ programs }) => {
                     <div className={styles.description}>
                         <p>{item.description}</p>
                     </div>
-                    <div className={styles.link}>
-                        <a href={item.link.path}>{item.link.text}</a>
+                    <a href={item.link.path} className={styles.link}>
+                        <span>{item.link.text}</span>
                         <img className={styles.arrow} src={arrow} />
-                    </div>
+                    </a>
                 </div>
             )
         })

@@ -1,0 +1,21 @@
+%green-button {
+    width: 280px;
+    height: 40px;
+    margin-top: 5px;
+    background: #68B738;
+    border: none;
+  
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Oswald';
+  }
+  
+  %green-button:hover {
+    background: #5EAA2F;
+  }
+
+  %green-button:active {
+    background: #5EAA2F;
+    color: rgba(255, 255, 255, 0.3)
+  }

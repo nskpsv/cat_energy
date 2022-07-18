@@ -1,0 +1,37 @@
+$green: #68B738;
+@import 'text_presets';
+
+.container {
+    @extend %menu-white;
+    width: 480px;
+    height: 40px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    cursor: pointer;
+
+    transition: all;
+    transition-duration: .09s;
+    transition-timing-function: linear;
+}
+
+.item:hover {
+    opacity: .5;
+}
+
+.item:active {
+    opacity: .3;
+}
+
+.active {
+    border-bottom: 1px solid #fff;
+}
+
+.icon {
+    display: none;
+}

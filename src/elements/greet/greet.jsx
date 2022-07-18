@@ -6,13 +6,13 @@ export default () => {
     return (
         <div className={styles.greet}>
             <div className={styles.header}>
-                <p className={styles.greeteng_text}>Функциональное питание для котов</p>
+                <p className={styles.greeteng_text}>Функциональное <br/> питание для котов</p>
                 <p className={styles.slogan}>занялся собой? займись котом!</p>
+                <button className={styles.choose_program_button}>подобрать программу</button>
             </div>
             <div className={styles.image}>
                 <img src={image} />
             </div>
-            <button className={styles.choose_program_button}>подобрать программу</button>
         </div>
     );
 };

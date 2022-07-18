@@ -1,0 +1,10 @@
+$desktop-width: 1440px;
+
+.container {
+    width: $desktop-width;
+
+    background-image: url(../../resources/greet/greet_background.svg);
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    background-position: top 0px right 0px;
+}

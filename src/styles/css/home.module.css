@@ -1,0 +1,9 @@
+.container {
+  width: 1440px;
+  background-image: url(../../resources/greet/greet_background.svg);
+  background-repeat: no-repeat;
+  background-size: auto auto;
+  background-position: top 0px right 0px;
+}
+
+/*# sourceMappingURL=home.module.css.map */
