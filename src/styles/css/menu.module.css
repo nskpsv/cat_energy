@@ -20,9 +20,10 @@
 
 .item {
   cursor: pointer;
-  transition: all;
-  transition-duration: 0.09s;
-  transition-timing-function: linear;
+  transition: all 0.09s linear;
+  -webkit-transition: all 0.09s linear;
+  -moz-transition: all 0.09s linear;
+  -o-transition: all 0.09s linear;
 }
 
 .item:hover {

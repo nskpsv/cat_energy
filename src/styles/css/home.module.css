@@ -1,5 +1,6 @@
 .container {
   width: 1440px;
+  margin: 0 auto;
   background-image: url(../../resources/greet/greet_background.svg);
   background-repeat: no-repeat;
   background-size: auto auto;

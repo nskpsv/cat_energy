@@ -1,0 +1,87 @@
+@import 'text_presets';
+@import 'mixins';
+@import 'colors';
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 270px 110px 0 110px;
+}
+
+.program {
+    width: 570px;
+    height: 375px;
+    background: $light-grey;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin: 40px 50px;
+
+    div {
+        height: 100px;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+    }
+
+    p {
+        @extend %header-36;
+        text-transform: uppercase;
+        margin-left: 60px;
+    }
+}
+
+.description {
+    @extend %text-16;
+    margin: 0 50px;
+}
+
+.link {
+    @extend %header-20;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 30px auto auto 50px;
+    display: flex;
+    align-items: center;
+}
+
+.link:active {
+    opacity: .3;
+}
+
+.link:hover .arrow {
+    width: 26px;
+}
+
+.link:hover .arrow::after {
+    left: 26px;
+}
+
+.arrow {
+    @include transition(width .09s linear);
+    margin-left: 17px;
+    margin-bottom: 1px;
+    width: 18px;
+    height: 2px;
+    background: black;
+    position: relative;
+}
+
+.arrow::after {
+    @include transition(left .09s linear);
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 6px solid black;
+    left: 18px;
+    top: -3px
+}

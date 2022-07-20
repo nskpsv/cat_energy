@@ -6,4 +6,20 @@
   align-items: center;
 }
 
+.logo {
+  cursor: pointer;
+  transition: all 0.09s linear;
+  -webkit-transition: all 0.09s linear;
+  -moz-transition: all 0.09s linear;
+  -o-transition: all 0.09s linear;
+}
+
+.logo:hover {
+  opacity: 0.5;
+}
+
+.logo:active {
+  opacity: 0.3;
+}
+
 /*# sourceMappingURL=header.module.css.map */

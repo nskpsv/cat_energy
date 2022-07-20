@@ -1,5 +1,6 @@
 $green: #68B738;
 @import 'text_presets';
+@import 'mixins';
 
 .container {
     @extend %menu-white;
@@ -14,10 +15,7 @@ $green: #68B738;
 
 .item {
     cursor: pointer;
-
-    transition: all;
-    transition-duration: .09s;
-    transition-timing-function: linear;
+    @include transition(all .09s linear);
 }
 
 .item:hover {

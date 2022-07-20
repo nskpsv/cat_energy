@@ -1,6 +1,6 @@
 import React from "react";
 import styles from './../../styles/css/greet.module.css';
-import image from '../../resources/greet/greet_img.svg';
+import image from '../../resources/greet/greet_img.png';
 
 export default () => {
     return (

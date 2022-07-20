@@ -24,7 +24,9 @@ margin: 0;
 }
 
 @import 'buttons_presets';
+@import 'mixins';
 
 button {
   @extend %green-button;
+  @include transition(all .09s linear);
 }

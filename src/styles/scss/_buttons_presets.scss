@@ -1,10 +1,12 @@
+@import 'colors';
+
 %green-button {
+    cursor: pointer;
     width: 280px;
     height: 40px;
     margin-top: 5px;
-    background: #68B738;
+    background: $green;
     border: none;
-  
     color: white;
     font-size: 14px;
     text-transform: uppercase;
@@ -12,10 +14,10 @@
   }
   
   %green-button:hover {
-    background: #5EAA2F;
+    background: $dark-green;
   }
 
   %green-button:active {
-    background: #5EAA2F;
-    color: rgba(255, 255, 255, 0.3)
+    background: $dark-green;
+    color: $white-03;
   }

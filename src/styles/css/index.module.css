@@ -22,6 +22,7 @@ body {
 }
 
 button {
+  cursor: pointer;
   width: 280px;
   height: 40px;
   margin-top: 5px;
@@ -40,6 +41,13 @@ button:hover {
 button:active {
   background: #5EAA2F;
   color: rgba(255, 255, 255, 0.3);
+}
+
+button {
+  transition: all 0.09s linear;
+  -webkit-transition: all 0.09s linear;
+  -moz-transition: all 0.09s linear;
+  -o-transition: all 0.09s linear;
 }
 
 /*# sourceMappingURL=index.module.css.map */

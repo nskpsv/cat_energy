@@ -1,5 +1,5 @@
-import slimIcon from '../../resources/program/slim_cat.svg';
-import gainIcon from '../../resources/program/gain_cat.svg';
+import slimIcon from '../../resources/programs/slim_cat.svg';
+import gainIcon from '../../resources/programs/gain_cat.svg';
 
 export default {
     slim: {
